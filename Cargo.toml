@@ -1,0 +1,15 @@
+[package]
+name = "gpu-compute-nostd"
+version = "0.1.0"
+edition = "2021"
+authors = ["Matt Gates <suhteevah@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Bare-metal NVIDIA GPU compute driver with tensor ops for LLM inference — no_std, no CUDA, no Linux"
+repository = "https://github.com/suhteevah/gpu-compute-nostd"
+keywords = ["gpu", "nvidia", "compute", "tensor", "no_std"]
+categories = ["no-std", "hardware-support", "science"]
+readme = "README.md"
+
+[dependencies]
+log = { version = "0.4", default-features = false }
+spin = { version = "0.9", default-features = false, features = ["mutex", "spin_mutex"] }
